@@ -4,7 +4,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Background" sideBarActiveItemID="background">
-  <div class="mb-5">
+  <!-- <div class="mb-5">
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
 
@@ -13,7 +13,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
+  </div> -->
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
@@ -21,12 +21,16 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="B.E. in Mechanical Design, Manufacturing, and Automation"
+      subtitle="2016 to 2020 at Southwest Jiaotong University, Chengdu, China"
     />
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="M.S. in Mechanical Engineering and Applied Mechanics"
+      subtitle="2020 to 2022 at University of Pennsylvania, Philadelphia, USA"
+    />
+    <TimeLineElement
+      title="Ph.D. in Mechanical Engineering"
+      subtitle="2023 to 2027 at University of California, Los Angeles, USA"
     />
   </div>
 
@@ -36,26 +40,56 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Teaching Volunteer"
+      subtitle="07/2017 at Meishan, Chengdu, China"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      As part of a dedicated team, I traveled to a remote, underprivileged mountainous area of Meishan to teach left-behind children. Together, we guided them in music, art, mathematics, and volleyball, fostering curiosity, creativity, and confidence. Despite limited resources, witnessing their excitement, teamwork, and growth was deeply rewarding. This experience reinforced my belief in the power of collaboration and the impact of education.
     </TimeLineElement>
+
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Engineering Assistant and 3D Modeler"
+      subtitle="06/2018 at Sichuan Shenkun Electro-Hydraulic Control Technology Co., Ltd. (Subsidiary of CASC), Chengdu, China"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      I inspected and verified the compatibility of engineering drawings for parts from different companies, completed modeling of components such as a steering engine shell and the air inlet of a specific aircraft type, and applied material allowances to raw parts according to engineering drawings before sending them into CNC processing.
     </TimeLineElement>
+
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Teaching Volunteer"
+      subtitle="07/2018 at Chiang Mai, Thailand"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      I joined a volunteer team in an underprivileged mountainous area of Chiang Mai, teaching elementary students English and daily life skills. Beyond lessons, we engaged the children in games and interactive activities, making learning fun while fostering confidence, teamwork, and curiosity. Experiencing their enthusiasm and growth was inspiring and reinforced my commitment to education and community service.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Product Developer"
+      subtitle="From 07/2019 to 08/2019 at Beijing Jvchuangyi Technology Co., Ltd., Beijing, China"
+    >
+      I designed and developed teaching aids capable of transforming from a simple geometric structure made of cubes into a more complex spatial structure, while maintaining only one or a few degrees of freedom.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Team Leader of Mechanical Group"
+      subtitle="From 09/2019 to 06/2020 at Innovation and Technology Hub, Southwest Jiaotong University, Chengdu, China"
+    >
+      I organized and led activities focused on mechanical innovation, coordinating events that encouraged hands-on exploration and creative problem-solving. As part of these initiatives, I delivered presentations and talks to engage participants, share insights, and inspire interest in engineering and design.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Research Assistant"
+      subtitle="From 2021 to 2023 at Sung Robotics Lab at University of Pennsylvania, Philadelphia, USA"
+    >
+      I conduct research on bio-inspired origami robots, focusing on their dynamic behaviors, the design of actuator mechanisms, and the development of origami patterns. My work explores how structural design and actuation strategies influence the robot's motion, flexibility, and overall performance.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Ph.D. Candidate"
+      subtitle="From 2023 to 2027 at Bionics Lab at University of California, Los Angeles, USA"
+    >
+      My research focuses on designing control algorithms for exoskeletons to enhance user engagement during rehabilitation. I also investigate human-robot interaction, ensuring the interactions are stable and responsive, while optimizing the robot's assistance to support the user's motion and recovery process.
     </TimeLineElement>
   </div>
 
-  <div class="mb-5">
+  <!-- <div class="mb-5">
     <div class="text-3xl w-full font-bold">Certifications</div>
   </div>
 
@@ -66,27 +100,27 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <li>
       <a href="#" target="_blank"> Certification Name (with link)</a>
     </li>
-  </ul>
+  </ul> -->
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
   <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>C/C++</li>
+    <li>Solidworks</li>
+    <li>Python</li>
+    <li>Matlab/Simulink</li>
+    <li>Ansys</li>
+    <li>Abaqus</li>
+    <li>Labview</li>
+    <li>3d Printing</li>
+    <li>Laser Cutting</li>
+    <li>Motion Capture</li>
+    <!-- <li>Skill Name</li>
     <li>Skill Name</li>
     <li>Skill Name</li>
     <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+    <li>Skill Name</li> -->
   </ul>
 </BaseLayout>

@@ -127,7 +127,7 @@ The timeline components are used to confirm the CV.
 The cards are primarly used for the Project and the Blog components. They include a picture, a title, and a description. 
 
 ```html
-<HorizontalCard title="Card Title" img="imge_url" desc="Description" url="Link
+<HorizontalCard title="Card Title" img="imge_url" desc="Description" url="Optional Link
 URL" target="Optional link target (_blank default)" badge="Optional badge"
 tags={['Array','of','tags']} />
 ```

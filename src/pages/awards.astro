@@ -1,51 +1,73 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
+import HorizontalCardList from "../components/HorizontalCardList.astro";
 ---
 
 <BaseLayout title = "Awards" sideBarActiveItemID="awards">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Awards</div>
   </div>
 
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  <HorizontalCardList
+    title="Outstanding Graduate Award"
+    desc="2020, Southwest Jiaotong University, Chengdu, China"
     url="#"
-    badge="NEW"
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+  <HorizontalCardList
+    title="Dean's List"
+    desc="2019, Southwest Jiaotong University, Chengdu, China"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCardList
+    title="Special Scholarship"
+    desc="2018-2019, Southwest Jiaotong University, Chengdu, China"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCardList
+    title="Elegant Star of National Scholarship"
+    desc="2018, Southwest Jiaotong University, Chengdu, China"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCardList
+    title="Merit Student Award"
+    desc="2016-2019, Southwest Jiaotong University, Chengdu, China"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCardList
+    title="Best Student in Mathematics Joint Prize"
+    desc="2017, Southwest Jiaotong University, Chengdu, China"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCardList
+    title="National Scholarship"
+    desc="2017, Ministry of Education, China"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCardList
+    title="Outstanding Team and Individual Award in Summer Social Practice"
+    desc="2017, Southwest Jiaotong University, Chengdu, China"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCardList
+    title="Comprehensive Development Scholarship"
+    desc="2016-2017, Southwest Jiaotong University, Chengdu, China"
     url="#"
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
-  </div>
-
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
 </BaseLayout>

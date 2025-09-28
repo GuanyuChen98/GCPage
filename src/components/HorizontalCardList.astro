@@ -1,0 +1,43 @@
+---
+const { title, desc, url, badge, tags, target = "_blank" } = Astro.props;
+const tag_url = url ? url.split("/").slice(0, -1).join("/") + "/tag" : "";
+const hasUrl = url && url.trim() !== "" && url !== "#";
+---
+
+<div class="rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out hover:scale-[102%] p-2">
+  {hasUrl ? (
+    <a href={url} target={target}>
+      <div class="flex flex-col space-y-1">
+        <h1 class="text-lg font-bold flex items-center">
+          {title}
+          {badge && <span class="badge badge-secondary ml-2">{badge}</span>}
+        </h1>
+        {desc && <p class="text-sm">{desc}</p>}
+        {tags && (
+          <div class="flex flex-wrap gap-1">
+            {tags.map((tag) => (
+              <a href={`${tag_url}/${tag}`} class="badge badge-outline text-xs">
+                {tag}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    </a>
+  ) : (
+    <div class="flex flex-col space-y-1">
+      <h1 class="text-lg font-bold flex items-center">
+        {title}
+        {badge && <span class="badge badge-secondary ml-2">{badge}</span>}
+      </h1>
+      {desc && <p class="text-sm">{desc}</p>}
+      {tags && (
+        <div class="flex flex-wrap gap-1">
+          {tags.map((tag) => (
+            <span class="badge badge-outline text-xs">{tag}</span>
+          ))}
+        </div>
+      )}
+    </div>
+  )}
+</div>
