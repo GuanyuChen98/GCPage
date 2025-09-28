@@ -5,7 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://guanyuchen98.github.io',
+  site: 'https://GuanyuChen98.github.io',
   base: '/GCPage',
   integrations: [mdx(), sitemap(), tailwind()]
 });
