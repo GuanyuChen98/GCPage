@@ -1,6 +1,6 @@
 # Astrofy | Personal Portfolio Website Template
 
-![Astrofy | Personal Porfolio Website Template](public/social_img.webp)
+![Astrofy | Personal Porfolio Website Template](public/social_img.png)
 
 Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with a Blog, CV, Project Section, Store, and RSS Feed.
 
@@ -127,7 +127,7 @@ The timeline components are used to confirm the CV.
 The cards are primarly used for the Project and the Blog components. They include a picture, a title, and a description. 
 
 ```html
-<HorizontalCard title="Card Title" img="imge_url" desc="Description" url="Optional Link
+<HorizontalCard title="Card Title" img="imge_url" desc="Description" url="Link
 URL" target="Optional link target (_blank default)" badge="Optional badge"
 tags={['Array','of','tags']} />
 ```
