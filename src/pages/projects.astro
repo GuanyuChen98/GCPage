@@ -10,36 +10,93 @@ import ExpandableCard from "../components/ExpandableCard.astro";
 
   <ExpandableCard
     title="An Adaptive Control Based on Error-Aware Greedy Strategy for Upper-Limb Rehabilitation"
-    img="/GCPage/post_img.webp"
+    img=""
     subtitle="Bionics Lab, University of California, Los Angeles, USA"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc={{
+      text: "A key challenge in rehabilitation is distinguishing slacking from limited capability. Estimating the minimal assistance required can mitigate this issue. If the robot provides less assistance than the historical minimum, the subject is deemed more capable, and the minimal assistance can be updated. Conversely, applying more effort than the minimal assistance suggests potential slacking. The present work makes the following contributions:",
+      points: [
+        "A greedy strategy based on error distribution across the workspace updates the minimal assistance estimate locally.",
+        "Adaptive law with an attraction term can mitigate the assistance increase and accelerate the reduction of the assistance to actively engage subjects.",
+        "Stability analysis shows an ultimate boundedness of error.",
+        "The proposed controller is demonstrated to have a better performance than a baseline adaptive controller."
+      ],
+      pdf: ""
+    }}
     url="#"
   />
   <div class="divider my-0"></div>
 
   <ExpandableCard
     title="A Self-Interactive Assist-As-Needed Controller for Upper-Limb Rehabilitation"
-    img="/GCPage/post_img.webp"
+    img=""
     subtitle="Bionics Lab, University of California, Los Angeles, USA"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc={{
+      text: "Joint interaction can help reduce robotic intervention, as the more capable joint can compensate for a more severely impaired joint. Meanwhile, the mildly impaired joint (i.e., the more capable one) can receive resistance while the severely impaired joint receives assistance, which promotes the recovery process. The present work makes the following contributions:",
+      points: [
+        "Investigation of self-interaction in multi-degree-of-freedom movements.",
+        "Design of virtual tunnels at the kinematic level.",
+        "Development of a projection-based constrained admittance controller.",
+        "Adaptive compliance adjustment to provide minimal assistance for capable joints and maximal assistance for impaired joints."
+      ],
+      pdf: ""
+    }}
     url="#"
   />
   <div class="divider my-0"></div>
 
   <ExpandableCard
+    title="Rigid Body Kinematics for Origami WaterBomb"
+    img=""
+    subtitle="University of Pennsylvania, Philadelphia, USA"
+    desc = {{
+      text: "Origami patterns are essential in soft and reconfigurable robotics. While origami deformation has been studied extensively using finite element methods, kinematic-level analysis of rigid origami assemblies remains limited. We propose a chain-like assembly of rigid waterbomb units to construct revolved bodies, ensuring crease consistency, collision avoidance, axis existence, and seamless assembly. The formability of waterbomb units and resulting revolved bodies is investigated, highlighting design constraints and kinematic implications.",
+      points: [
+        "Chain-like assembly method for revolved bodies using rigid waterbomb units.",
+        "Ensures crease status consistency, collision avoidance, axis existence, and seamless assembly.",
+        "Exploration of formability with varying layer and column numbers.",
+        "Boundaries of layer and column numbers identified for feasible constructions.",
+        "Impact of aspect ratio and waterbomb configuration on revolved body formability."
+      ],
+      pdf: "/GCPage/Kinematic_modeling_and_formability_analysis_of_revolved_bodies_formed_by_origami_waterbomb_units_based_on_a_chain-like_layer-building_method.pdf",
+    }}
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+
+  <ExpandableCard
     title="Bio-inspired Origami Swimmer"
-    img="/GCPage/post_img.webp"
+    img=""
     subtitle="Sung Robotics Lab, University of Pennsylvania, Philadelphia, USA"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc={{
+      text: "Origami robots offer advantages such as light weight, simple fabrication, and low cost. We designed an origami swimmer inspired by octopus locomotion, which propels itself by expanding to absorb water and then ejecting it. The work focuses on improving the actuation system, analyzing the dynamic response, and using computer vision to extract volumetric changes to study the drag coefficient under different volumes.",
+      points: [
+        "Design of an origami-inspired swimmer with octopus-like locomotion.",
+        "Improved actuation system for efficient propulsion.",
+        "Dynamic response analysis of the swimmer during motion.",
+        "Use of computer vision to quantify volumetric changes and study drag coefficient variations."
+      ],
+      pdf: "/GCPage/DRAG_COEFFICIENT_CHARACTERIZATION_OF_THE_ORIGAMI_MAGIC_BALL.pdf",
+      video: "/GCPage/Origami.mp4" 
+    }}
     url="#"
   />
   <div class="divider my-0"></div>
 
   <ExpandableCard
     title="Insulator Inspection Robot"
-    img="/GCPage/post_img.webp"
+    img=""
     subtitle="Southwest Jiaotong University, Chengdu, China"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc={{
+      text: "High-voltage tower insulator maintenance is inherently dangerous and labor-intensive, with low efficiency when performed manually. To address this, we designed an insulator inspection robot. The work includes mechanical design, kinematic and dynamic analysis, motion planning, and structural stress evaluation using Ansys, providing a safe and efficient alternative to manual operations.",
+      points: [
+        "Design of a high-voltage tower insulator inspection robot.",
+        "Kinematic and dynamic analysis of the robotic system.",
+        "Motion planning for safe and efficient operations.",
+        "Structural stress evaluation performed in Ansys."
+      ],
+      video: "/GCPage/InsulatorInspectionRobot.mp4" 
+    }}
     badge=""
   />
   <div class="divider my-0"></div>

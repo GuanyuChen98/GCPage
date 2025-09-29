@@ -1,43 +1,38 @@
 ---
-const { title, desc, url, badge, tags, target = "_blank" } = Astro.props;
-const tag_url = url ? url.split("/").slice(0, -1).join("/") + "/tag" : "";
-const hasUrl = url && url.trim() !== "" && url !== "#";
+const { title, desc, pdf, badge, tags } = Astro.props;
 ---
 
 <div class="rounded-lg bg-base-100 hover:shadow-lg transition ease-in-out hover:scale-[102%] p-2">
-  {hasUrl ? (
-    <a href={url} target={target}>
-      <div class="flex flex-col space-y-1">
-        <h1 class="text-lg font-bold flex items-center">
-          {title}
-          {badge && <span class="badge badge-secondary ml-2">{badge}</span>}
-        </h1>
-        {desc && <p class="text-sm">{desc}</p>}
-        {tags && (
-          <div class="flex flex-wrap gap-1">
-            {tags.map((tag) => (
-              <a href={`${tag_url}/${tag}`} class="badge badge-outline text-xs">
-                {tag}
-              </a>
-            ))}
-          </div>
-        )}
+  <div class="flex flex-col space-y-2">
+    <!-- Title + PDF link -->
+    <div class="flex justify-between items-start">
+      <!-- Title and badge -->
+      <div class="flex flex-wrap items-center gap-2">
+        <h1 class="text-lg font-bold">{title}</h1>
+        {badge && <span class="badge badge-secondary">{badge}</span>}
       </div>
-    </a>
-  ) : (
-    <div class="flex flex-col space-y-1">
-      <h1 class="text-lg font-bold flex items-center">
-        {title}
-        {badge && <span class="badge badge-secondary ml-2">{badge}</span>}
-      </h1>
-      {desc && <p class="text-sm">{desc}</p>}
-      {tags && (
-        <div class="flex flex-wrap gap-1">
-          {tags.map((tag) => (
-            <span class="badge badge-outline text-xs">{tag}</span>
-          ))}
-        </div>
+
+      <!-- PDF link with separator '|' -->
+      {pdf && (
+        <a
+          href={pdf}
+          target="_blank"
+          class="flex items-center text-blue-600 hover:text-blue-800"
+        >
+          <span class="mr-1 self-stretch border-l-2 border-gray-400"></span>
+          <span class="text-sm underline">View Paper</span>
+        </a>
       )}
     </div>
-  )}
+
+    {desc && <p class="text-sm">{desc}</p>}
+
+    {tags && (
+      <div class="flex flex-wrap gap-1">
+        {tags.map((tag) => (
+          <span class="badge badge-outline text-xs">{tag}</span>
+        ))}
+      </div>
+    )}
+  </div>
 </div>
