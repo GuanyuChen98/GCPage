@@ -1,0 +1,41 @@
+---
+const { title, img, desc, badge, subtitle } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<!-- Alpine.js for expand/collapse -->
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<div
+  x-data="{ expanded: false }"
+  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%] overflow-hidden w-[46rem]"
+>
+  <div
+    class="hero-content flex-col md:flex-row items-start cursor-pointer"
+    @click="expanded = !expanded"
+  >
+    {img && (
+      <Image
+        src={img}
+        width={750}
+        height={422}
+        format="webp"
+        alt={title}
+        class="max-w-full md:max-w-[13rem] rounded-lg mb-2 md:mb-0 md:mr-4"
+      />
+    )}
+    <div class="grow w-full">
+      <h1 class="text-xl font-bold">
+        {title}
+        {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
+      </h1>
+
+      {subtitle && <p class="text-sm text-gray-500">{subtitle}</p>}
+
+      <!-- Expanded description -->
+      <div x-show="expanded" x-transition class="py-1 text-1xl">
+        <p>{desc}</p>
+      </div>
+    </div>
+  </div>
+</div>
